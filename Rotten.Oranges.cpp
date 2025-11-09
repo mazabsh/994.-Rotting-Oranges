@@ -21,7 +21,8 @@ public:
      vector<int> direction={-1,0,1,0}; 
      while(!q.empty()&& freshOranges>0){
         ++minute;
-       for(int i=0; i<q.size(); ++i){
+        int sz = q.size(); 
+       for(int i=0; i<sz; ++i){
            
          auto [x,y] = q.front(); 
          q.pop(); 
